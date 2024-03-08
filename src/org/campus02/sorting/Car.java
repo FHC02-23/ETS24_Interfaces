@@ -36,6 +36,15 @@ public class Car implements Sortable<Car> {
     }
 
     @Override
+    public String toString() {
+        return "Car{" +
+                "productionYear=" + productionYear +
+                ", carType='" + carType + '\'' +
+                ", drivenKilometer=" + drivenKilometer +
+                '}';
+    }
+
+    @Override
     public int compare(Car other) {
         if (this.getProductionYear() == other.getProductionYear())
             return 0;
